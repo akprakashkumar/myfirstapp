@@ -35,17 +35,15 @@ def img_to_bytes(img_path):
 
 def cs_sidebar():
 
-    # st.sidebar.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=32 height=32>](https://streamlit.io/)'''.format(img_to_bytes("logomark_website.png")), unsafe_allow_html=True)
+    st.sidebar.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=32 height=32>](https://streamlit.io/)'''.format(img_to_bytes("logomark_website.png")), unsafe_allow_html=True)
     st.sidebar.header('Ticker Tracker App')
 
     st.sidebar.markdown('''
-                        <small>Summary of the [docs](https://docs.streamlit.io/), as of [Streamlit v1.25.0](https://www.streamlit.io/).</small>
+                        <small> Version: 1.0.0 | Author: Aswinkumar Prakashkumar </small>
                         ''', unsafe_allow_html=True)
 
     st.sidebar.markdown('__Install and import__')
-
     st.sidebar.code('$ pip install streamlit')
-
     st.sidebar.code('''
                     # Import convention
                     >>> import streamlit as st ''')
@@ -62,18 +60,19 @@ def cs_sidebar():
                     'dataframe:', data ''')
 
     st.sidebar.markdown('__Command line__')
-    st.sidebar.code('''$ streamlit --help
+    st.sidebar.code('''
+                    $ streamlit --help
                     $ streamlit run your_script.py
                     $ streamlit hello
                     $ streamlit config show
                     $ streamlit cache clear
                     $ streamlit docs
-                    $ streamlit --version''')
+                    $ streamlit --versionc ''')
 
     st.sidebar.markdown('<small>Learn more about [experimental features](https://docs.streamlit.io/library/advanced-features/prerelease#beta-and-experimental-features)</small>', unsafe_allow_html=True)
 
     st.sidebar.markdown('''<hr>''', unsafe_allow_html=True)
-    st.sidebar.markdown('''<small>[Cheat sheet v1.25.0](https://github.com/daniellewisDL/streamlit-cheat-sheet)  | Aug 2023 | [Daniel Lewis](https://daniellewisdl.github.io/)</small>''', unsafe_allow_html=True)
+    st.sidebar.markdown('''<small>[LinkedIn](https://www.linkedin.com/in/aswinpkumar)  | Feb 2024 | [Aswinkumar Prakashkumar](https://www.aswinkumar.in/)</small>''', unsafe_allow_html=True)
 
     return None
 
